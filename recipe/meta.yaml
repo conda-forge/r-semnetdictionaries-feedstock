@@ -26,9 +26,11 @@ requirements:
   host:
     - r-base
     - r-easycsv
+    - r-knitr
   run:
     - r-base
     - r-easycsv
+    - r-knitr
 
 test:
   commands:
