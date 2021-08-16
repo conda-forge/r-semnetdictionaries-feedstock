@@ -1,4 +1,4 @@
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/SemNetDictionaries_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/SemNetDictionaries/SemNetDictionaries_{{ version }}.tar.gz
-  sha256: 64da2e3c7f63ff75da49f41d036a7dbfbff3ea40818b1a82cef9e3cb2cae6604
+  sha256: db67a45cdcfd7ecf7cfd0f4ce0e4feff8cd2a2b9d4a8f24a50c2a96cb86c8f0f
 
 build:
   merge_build_host: true  # [win]
