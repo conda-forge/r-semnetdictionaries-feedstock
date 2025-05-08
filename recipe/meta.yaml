@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/SemNetDictionaries_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/SemNetDictionaries/SemNetDictionaries_{{ version }}.tar.gz
-  sha256: 22f7343135ec779186fe2ce1793466bd5eb3b29f1c59c07f8d4142988eda10fa
+  sha256: 4f1efd543ad4b4f45f3956544ae555f8247b34ee4614698a718e05e314045335
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
