@@ -1,4 +1,4 @@
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/SemNetDictionaries_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/SemNetDictionaries/SemNetDictionaries_{{ version }}.tar.gz
-  sha256: 4f1efd543ad4b4f45f3956544ae555f8247b34ee4614698a718e05e314045335
+  sha256: beb7ce8ac41616be267a1ced69577da818913564d781f933a2d473f0e54a6d2c
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -38,8 +38,8 @@ test:
 about:
   home: https://github.com/AlexChristensen/SemNetDictionaries
   license: GPL-3.0-or-later
-  summary: Implements dictionaries that can be used in the 'SemNetCleaner' package. Also includes several functions aimed at facilitating the text cleaning analysis in the 'SemNetCleaner' package. This package is designed to integrate and update word lists and dictionaries based on each user's individual needs by allowing
-    users to store and save their own dictionaries. Dictionaries can be added to the 'SemNetDictionaries' package by submitting user-defined dictionaries to <https://github.com/AlexChristensen/SemNetDictionaries>.
+  summary: Implements dictionaries that can be used in the 'SemNetCleaner' package. Also includes several functions aimed at facilitating the text cleaning analysis in the 'SemNetCleaner' package. This package is designed to integrate and update word lists and dictionaries based on each user's individual needs by 
+    allowing users to store and save their own dictionaries. Dictionaries can be added to the 'SemNetDictionaries' package by submitting user-defined dictionaries to <https://github.com/AlexChristensen/SemNetDictionaries>.
   license_family: GPL3
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
